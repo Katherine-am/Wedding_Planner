@@ -1,0 +1,69 @@
+body {
+    background-image: url("../img/NewWedding.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    margin-bottom: 4%;
+}
+
+.regbar {
+    background-color: rgba(47, 46, 39, 0.419);
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    padding-top: 12%;
+}
+
+form {
+    padding-top: 7%;
+}
+
+.col-form-label {
+    color: white;
+    font-size: 11px;
+    vertical-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-control {
+    border-radius: 0.2em;
+    background-color: rgba(255, 255, 255, 0.684);
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-block {
+    border-radius: 0.2em;
+    background-color: rgb(241, 205, 195);
+    border-color: rgb(241, 205, 195);
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+.btn-dark {
+    border-radius: 0.2em;
+    background-color: rgb(62, 62, 62);
+    border-color: rgb(62, 62, 62);
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+.btn-success {
+    border-radius: 0.2em;
+    background-color: rgb(125, 184, 192);
+    border-color: rgb(125, 184, 192);
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    color:  rgb(241, 205, 195);
+    font-family: 'Dancing Script', cursive;
+}

@@ -1,0 +1,52 @@
+@model WrapperModel
+<!DOCTYPE>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/dashboard.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1>Everyone said, "Yes!"</h1>
+            </div>
+            <div class="col-4 text-right">
+                <a href="/SignOut" class="btn btn-dark">Log Out</a>
+            </div>
+        </div>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th>Wedding</th>
+                <th>Date</th>
+                <th>Guest</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach(var wedding in Model.allWeddings)
+                {
+                    <tr>
+                        <td><a href="@wedding.WeddingID">@wedding.WedderOne & @wedding.WedderTwo</a></td>
+                        <td>@wedding.Date</td>
+                        <td>@wedding.WeddingGuest.Count</td>
+                        <td><form action="/RSVP/@wedding.WeddingID" method="POST">
+                                <input type="submit" class="btn btn-light" value="RSVP">
+                            @if(@Model.newUser.UserID == @wedding.Creator.UserID)
+                            {
+                                <a href="DeleteWedding/@wedding.WeddingID" class="btn btn-dark">Delete</a>
+                            }
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+    <a href="/NewWedding" class="btn btn-block">New Wedding</a>
+    </div>
+</body>
+</html>

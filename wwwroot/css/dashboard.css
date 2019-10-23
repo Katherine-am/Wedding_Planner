@@ -1,0 +1,38 @@
+body {
+    background-image: url("../img/Pathway.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+h1 {
+    margin-top: 5%;
+    color:  rgb(19, 99, 117);
+    font-family: 'Dancing Script', cursive;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+table {
+    border-color: rgb(rgba(255, 255, 255, 0));
+}
+
+th {
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+}
+
+a {
+    
+}
+
+.btn-block {
+    border-radius: 0.2em;
+    background-color: rgb(241, 205, 195);
+    border-color: rgb(241, 205, 195);
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    width: 25%;
+}

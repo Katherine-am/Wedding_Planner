@@ -1,0 +1,47 @@
+body {
+    background-image: url("../img/BeachWedding.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
+    margin-bottom: 4%;
+}
+
+.regbar {
+    background-color: rgba(47, 46, 39, 0.419);
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    padding-top: 4%;
+}
+
+.col-form-label {
+    color: white;
+    font-size: 11px;
+    vertical-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-control {
+    border-radius: 0.2em;
+    background-color: rgba(255, 255, 255, 0.684);
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+    border-radius: 0.2em;
+    background-color: rgb(241, 205, 195);
+    border-color: rgb(241, 205, 195);
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    color:  rgb(241, 205, 195);
+    font-family: 'Dancing Script', cursive;
+}
