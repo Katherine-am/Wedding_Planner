@@ -21,22 +21,6 @@
                 }
             }
         </div>
-        <div class="col">
-            <div id="map"></div>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrYEpsKhOJ9vtrNVnobGxE8S-ecaws8kw&callback=initMap" async defer>
-            </script>
-            <script>
-                var map;
-                var geocoder;
-                function initMap(){
-                    map = new google.maps.Map(document.getElementById('map'),{
-                        zoom:8,
-                        center:{lat:47.36,lng:-122.20},
-                        height: 100%
-                    });
-                }
-            </script>
-        </div>
     </div>
 </div>
 
